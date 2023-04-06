@@ -2,4 +2,80 @@
   padding: 0;
 }
 
+<<<<<<< Updated upstream
 #
+=======
+#container {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+#hero-desc {
+  font-weight: 500;
+}
+
+/* Home Section */
+
+#home {
+  background-image: linear-gradient(#374993, #3786B6);
+  overflow-x: hidden;
+}
+
+.home-text{
+  color: #FFFFFF;
+  position: absolute;
+  text-align: center;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#get-started-btn {
+  margin-top: 20px;
+}
+
+.hero-path {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+}
+
+#back-path {
+  left: 32px;
+}
+
+#front-path {
+  float: left;
+  left: -67px;
+  width: 110%;
+}
+
+#bg-img {
+  opacity: 15%;
+  float: inherit;
+  width: 100%;
+}
+
+#about-us{
+  background-image: linear-gradient(#ffffff,#EAEAEA);
+}
+
+#team-page {
+  text-align: center;
+  color: #000000;
+  font-weight: lighter;
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color:#444444;
+}
+>>>>>>> Stashed changes
