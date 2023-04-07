@@ -8,6 +8,10 @@
   font-weight: 300;
 }
 
+p {
+  font-size: 1rem;
+}
+
 h1 {
   font-size: 3rem;
   font-weight: 700;
@@ -60,6 +64,20 @@ h1 {
   width: 100%;
 }
 
+#how-to {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr 3fr 1fr;
+  grid-template-rows: 1fr repeat(6, 2fr);
+}
+
+#how-to-title {
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 1 / 2/ 2/ 5;
+}
+
 .how-to-card {
   border-radius: 10px;
   background-color: white;
@@ -68,19 +86,40 @@ h1 {
   width: 300px;
   height: 300px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
-  grid-template-columns: 3fr 1fr 3fr;
+  
 }
 
 #step-1 {
-  grid-column: 1;
-  grid-row: 1;
-  justify-content: end;
+  grid-column: 2;
+  grid-row: 2;
 }
 
-#how-to-title {
-  color: #000;
-  display: flex;
-  justify-content: center;
+#step-2 {
+  grid-column: 4;
+  grid-row: 4;
+}
+
+#step-3 {
+  grid-column: 2;
+  grid-row: 6;
+}
+
+#header_2 {
+  text-align: left;
+  padding-left: 20px;
+}
+
+#exp_2 {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.header {
+  color:#000;
+  font-size: 27px;
+  font-weight: bold;
+  text-align: right;
+  padding-right: 20px;
 }
 
 .step-pill {
@@ -92,8 +131,31 @@ h1 {
   padding: 5px 10px;
   border-radius: 20px;
   margin-bottom: 10px;
+  text-align: right;
 }
 
+.explanation {
+  color:#000;
+  font-size: 0.9rem;
+  text-align: right;
+  padding-right: 20px;
+
+}
 #how-to {
   background-image: linear-gradient(white,#F3F3F3);
+}
+
+#img_1 {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+#img_2 {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+#img_3 {
+  grid-column: 4;
+  grid-row: 6;
 }
