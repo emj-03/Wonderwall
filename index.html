@@ -15,11 +15,12 @@
 </head>
 
 <body>
+
 	<div id="container">
 
 		<section id="home">
 			<img src="assets/bgImg.png" width="100%" id="bg-img" alt="background Image">
-			<img src="assets/hero-path.png" width="100%" id="hero-path" alt="path">	
+			<img src="assets/hero-path.png" width="100%" id="hero-path" alt="path">
 
 
 			<div class="home-text">
@@ -33,24 +34,32 @@
 
 	  <section id="how-to">
 
-	    <h2>Fast, reliable, and simple</h2>
+	    <h2 id="how-to-title">Fast, reliable, and simple</h2>
+
+			<img src="assets\step1_img.png" height="300px" width="300px" id="img_1">
+			<img src="assets\step2_img.png" height="300px" width="300px" id="img_2">
+			<img src="assets\step3_img.png" height="300px" width="300px" id="img_3">
+
+			<div id="progress-bar-container">
+				<div id="progress-bar"></div>
+			</div>
 
 	    <div class="how-to-card" id="step-1">
-	      <h3>Step 1</h3>
-	      <p>Enter in your prompt</p>
-	      <p>To ensure good quality and consisten results make sure that you use descriptive words for your piece, as it will aid the model in generating good images</p>
-	    </div>
+	      <h3 class="step-pill">Step 1</h3>
+	      <p class="header">Enter in your prompt</p>
+				<p class="explanation">To ensure good quality and consistent results, use descriptive words for your piece, as it will aid the model in generating good images</p>
+			</div>
 
 	    <div class="how-to-card" id="step-2">
-	      <h3>Step 2</h3>
-	      <p>Refine your prompt</p>
-	      <p>Remove any repeat or unnecessary words. Additionally, you may use (parenthesis) to put emphasis on certain descriptors. More parenthesis means more ((emphasis))</p>
+	      <h3 class="step-pill">Step 2</h3>
+	      <p class="header" id="header_2">Refine your prompt</p>
+				<p class="explanation" id="exp_2">Remove unnecessary words. Additionally, you may use (parenthesis) to put emphasis on certain descriptors.</p>
 	    </div>
 
 	    <div class="how-to-card" id="step-3">
-				<h3>Step 3</h3>
-					<p>Export your asset</p>
-					<p>Download your newly created asset and import it into your game engine of choice and show off your new AI-generated creation to your friends!</p>
+				<h3 class="step-pill">Step 3</h3>
+				<p class="header">Export your asset</p>
+				<p class="explanation">Download your newly created asset and import it into your game engine of choice and show off your new AI-generated creation to your friends!</p>
 	    </div>
 
 	  </section>
@@ -63,6 +72,8 @@
 	     <p>Cat</p>
 	   </section>
 
+ 		<!-- scroll logic for progress bar -->
+		<script src="C:/Users/User/Desktop/Purdue/Spring 2023/CGT 141/Final Project/Wonderwall/js/scripts.js"></script>
 	</div>
 </body>
 
