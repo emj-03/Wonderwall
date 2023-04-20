@@ -1,5 +1,5 @@
 
-/* UNIVERSAL: AFFECTS WHOLE DOC */
+/* NOTE: UNIVERSAL: AFFECTS WHOLE DOC */
 * {
   padding: 0;
   margin: 0;
@@ -9,6 +9,7 @@
 #container {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
+  position: relative;
 }
 
 h1 {
@@ -16,7 +17,88 @@ h1 {
   font-weight: 700;
 }
 
-/* Index: Home Section */
+header li,a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 5%;
+  z-index: 100;
+  opacity: 0; /* Set the initial opacity to 0 */
+  animation-name: fade; /* Add the fade-up animation */
+  animation-duration: 1.2s; /* Set the animation duration (adjust as needed) */
+  animation-fill-mode: forwards; /* Ensure the animation stays in its final state */
+  animation-timing-function: ease-out;
+  animation-delay: 0.8s;
+}
+
+.nav_links{
+  list-style:none;
+  padding: 10px 0 0 0;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a{
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+  color:orange;
+}
+
+header .btn {
+  border-radius: 12px;
+  padding: 5px 15px;
+}
+
+/* NOTE: Animations */
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, calc(-50% - 50px));
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* NOTE: Index: Home Section */
 
 /* Home Section */
 #home {
@@ -35,6 +117,12 @@ h1 {
   top: 34%;
   left: 50%;
   transform: translate(-50%, -50%);
+  opacity: 0; /* Set the initial opacity to 0 */
+  animation-name: fade-down; /* Add the fade-up animation */
+  animation-duration: 0.6s; /* Set the animation duration (adjust as needed) */
+  animation-fill-mode: forwards; /* Ensure the animation stays in its final state */
+  animation-timing-function: ease-out;
+  animation-delay: 0.3s;
 }
 
 /* p text in div */
@@ -45,6 +133,75 @@ h1 {
 /* Button in home */
 #get-started-btn {
   margin-top: 20px;
+}
+
+.artworks{
+  position: absolute;
+  opacity: 0; /* Set the initial opacity to 0 */
+  animation-name: fade-up; /* Add the fade-up animation */
+  animation-duration: 1s; /* Set the animation duration (adjust as needed) */
+  animation-fill-mode: forwards; /* Ensure the animation stays in its final state */
+  animation-timing-function: ease-out;
+}
+
+#back-img-1{
+  top: 24vh;
+  left: 12vw;
+  width: 22vw;
+  height: auto;
+  animation-duration: 0.8s;
+  animation-delay: 0.75s;
+}
+
+#back-img-2{
+  top: 51vh;
+  left: 49vw;
+  width: 15vw;
+  height: auto;
+  animation-duration: 0.8s;
+  animation-delay: 0.82s;
+}
+
+#back-img-3{
+  top: 27vh;
+  left: 68vw;
+  width: 18vw;
+  height: auto;
+  animation-duration: 0.8s;
+  animation-delay: 0.8s;
+}
+
+#front-img-1{
+  top: 20vh;
+  left: -3vw;
+  width: 22vw;
+  height: auto;
+  animation-delay: 1.35s;
+}
+
+#front-img-2{
+  top: 62vh;
+  left: 13vw;
+  width: 25vw;
+  height: auto;
+  animation-delay: 1.25s;
+}
+
+#front-img-3{
+  top: 60vh;
+  left: 67vw;
+  width: 19vw;
+  height: auto;
+  animation-delay: 1.15s;
+  z-index: 1000;
+}
+
+#front-img-4{
+  top: 15vh;
+  left: 78vw;
+  width: 23vw;
+  height: auto;
+  animation-delay: 1.05s;
 }
 
 /* Background image in section */
@@ -63,7 +220,7 @@ h1 {
   width: 100%;
 }
 
-/* Index: How To */
+/* ======== NOTE: Index: How To ======== */
 
 /* How To Section */
 #how-to {
@@ -85,7 +242,7 @@ h1 {
   position: relative;
   height: 80%;
   width: 5px;
-  /* background-color: #eee; */
+  background-color: #ededed;
   overflow: hidden;
   justify-self: center;
   margin: 125px 0; /* Adding 10% margin at the top and bottom */
@@ -99,7 +256,7 @@ h1 {
   height: 0;
   background-color: orange;
   opacity: 1;
-  transition: opacity 0.3s, height 0.7s ease;
+  transition: opacity 0.7s ease, height 0.3s ease;
   /* box-shadow: 0 0 10px 10px rgba(255, 165, 0, 0.5); */
 }
 
@@ -119,6 +276,17 @@ h1 {
   width: 300px;
   height: 300px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 #step-1 {

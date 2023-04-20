@@ -31,3 +31,31 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initialize the progress bar when the page loads
   updateProgressBar();
 });
+
+function isElementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+function fadeInOnScroll() {
+  const fadeIns = document.querySelectorAll(".fade-in");
+
+  for (const fadeIn of fadeIns) {
+    if (isElementInViewport(fadeIn)) {
+      fadeIn.classList.add("visible");
+    }
+
+    // else {
+    //   fadeIn.classList.remove("visible");
+    // }
+  }
+}
+
+window.addEventListener("scroll", fadeInOnScroll);
+window.addEventListener("resize", fadeInOnScroll);
+window.addEventListener("load", fadeInOnScroll);
