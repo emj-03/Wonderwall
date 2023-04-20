@@ -362,3 +362,20 @@ header .btn {
   grid-row: 6;
   -webkit-filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.3));
 }
+
+#about-us{
+  background-image: linear-gradient(#ffffff,#EAEAEA);
+}
+
+#team-page {
+  text-align: center;
+  color: #000000;
+  font-weight: lighter;
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color:#444444;
+}
