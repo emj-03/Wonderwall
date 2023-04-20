@@ -275,7 +275,7 @@ header .btn {
   padding: 20px;
   width: 300px;
   height: 300px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
 }
 
 .fade-in {
@@ -348,14 +348,17 @@ header .btn {
 #img_1 {
   grid-column: 4;
   grid-row: 2;
+  -webkit-filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.3));
 }
 
 #img_2 {
   grid-column: 2;
   grid-row: 4;
+  -webkit-filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.3));
 }
 
 #img_3 {
   grid-column: 4;
   grid-row: 6;
+  -webkit-filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.3));
 }
