@@ -1,5 +1,6 @@
 
 /* NOTE: UNIVERSAL: AFFECTS WHOLE DOC */
+
 * {
   padding: 0;
   margin: 0;
@@ -10,6 +11,10 @@
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   position: relative;
+}
+
+p {
+  font-size: 1rem;
 }
 
 h1 {
@@ -226,7 +231,7 @@ header .btn {
 #how-to {
   display: grid;
   grid-template-columns: 1fr 3fr 2fr 3fr 1fr;
-  grid-template-rows: 1fr repeat(6, 1fr);
+  grid-template-rows: 1fr repeat(5, 1fr);
 }
 
 #how-to-title {
@@ -364,7 +369,8 @@ header .btn {
 }
 
 #about-us{
-  background-image: linear-gradient(#ffffff,#EAEAEA);
+  background-image: linear-gradient(#F3F3F3,white);
+  padding-top: 160px;
 }
 
 #team-page {
@@ -373,9 +379,25 @@ header .btn {
   font-weight: lighter;
 }
 
+#our-team-title {
+
+}
+
+#team-desc {
+  padding-top: 75px;
+  margin-bottom: 75px;
+}
+
+.team-sec {
+}
+
 .team {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   color:#444444;
+}
+
+.team h3 {
+  font-size: 1.5rem;
 }
