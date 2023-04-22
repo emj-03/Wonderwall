@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
@@ -15,14 +12,26 @@
 </head>
 
 <body>
-    <h1>Create</h1>
-    <p>Create imaginative and visually stunning images through AI and use them in your projects</p>
-    <h2>Your Name</h2>
-    <p>Enter your name</p>
-    <h3>Prompt</h3>
-    <p>Enter your prompt here. Seperate your descriptions with commas.</p>
-    <a>Generate</a>
-    <p>Image Displayed Here</p>
-    <p>Once you create an image you like, post it to the community gallery!</p>
-    <a>Share!</a>
+	<div class="container">
+		<section id="generator">
+		  <h1>Create</h1>
+		  <p>Create imaginative and visually stunning images through AI and use them in your projects</p>
+		  <h3>Your Name</h3>
+		  <form id="user-name" action="index.html" method="post">
+		    <label for="name-input"></label>
+		    <input type="text" name="name-input" placeholder="Enter your name!">
+		  </form>
+		  <h3>Prompt</h3>
+		  <p>Enter your prompt here. Separate your descriptions with commas.</p>
+		  <input type="text" id="text-input" placeholder="Enter prompt here">
+			<br>
+		  <button id="submit-prompt">Generate</button>
+			<div style="width: 256px; height: 256px;">
+  			<img id="image-placeholder" src="assets/placeholder-img.png" alt="Generated Image">
+			</div>
+		  <p>Once you create an image you like, post it to the community gallery!</p>
+		  <button>Share!</button>
+		</section>
+	</div>
+	<script src="js/app.js" type="module"></script>
 </body>

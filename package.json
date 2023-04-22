@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "vite"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/emj-03/Wonderwall#readme",
   "dependencies": {
-    "openai": "^3.2.1"
+    "openai": "^3.2.1",
+    "vite": "^4.3.1"
   }
 }

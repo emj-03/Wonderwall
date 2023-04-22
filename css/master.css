@@ -391,6 +391,10 @@ header .btn {
 .team-sec {
 }
 
+.team-img {
+  /* width: 15%; */
+}
+
 .team {
   display: flex;
   flex-wrap: wrap;
@@ -400,4 +404,14 @@ header .btn {
 
 .team h3 {
   font-size: 1.5rem;
+}
+
+/* NOTE: GENERATE PAGE */
+
+#image-placeholder {
+  float: right;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 256px;
+  height: 256px;
 }
