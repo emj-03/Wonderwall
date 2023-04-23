@@ -1,9 +1,9 @@
 document.getElementById("submit-prompt").addEventListener("click", async () => {
   console.log("SENT");
 
-  const OPENAI_API_KEY = "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";
+  const OPENAI_API_KEY = "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";
 
-  const prompt = "((highest quality, masterpiece), High detail color illustration, (highest quality), (best illustration)), interesting background, anime style, Game character,game asset, portrait of ";
+  const prompt = "((highest quality, masterpiece), High detail color illustration, (highest quality), (best illustration)), interesting background, 8k graphics, unreal engine, 8k unity wallpaper,  extreme detail, (3d game asset), made by riot games, Game character, (RPG game cahracter), (stylized portrait), portrait of ";
   const requestBody = {
     prompt: prompt + document.getElementById("text-input").value,
     n: 1,

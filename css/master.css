@@ -408,6 +408,13 @@ header .btn {
 
 /* NOTE: GENERATE PAGE */
 
+#generator {
+  font-family: 'Poppins', sans-serif;
+  padding: 50px 0;
+  background-image: linear-gradient(white,#F3F3F3);
+  height: 100vh;
+}
+
 #image-placeholder {
   float: right;
   border: 1px solid #ccc;
