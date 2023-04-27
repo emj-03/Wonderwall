@@ -413,6 +413,7 @@ header .btn {
   padding: 50px 0;
   background-image: linear-gradient(white,#F3F3F3);
   height: 100vh;
+  display: flex;
 }
 
 #image-placeholder {
@@ -421,4 +422,28 @@ header .btn {
   border-radius: 10px;
   width: 256px;
   height: 256px;
+}
+
+.half {
+  width: 50%;
+  height: auto;
+  margin-top: 0;
+}
+
+#content-container {
+  width: 100%;
+  display: flex;
+  padding: 0 40px;
+  color: #000;
+}
+
+#prompts {
+  padding: 0 10px;
+}
+
+#sidebar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 30px 10px;
 }

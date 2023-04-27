@@ -1,7 +1,7 @@
 document.getElementById("submit-prompt").addEventListener("click", async () => {
   console.log("SENT");
 
-  const OPENAI_API_KEY = "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";
+  const OPENAI_API_KEY = "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";
 
   const prompt = "((highest quality, masterpiece), High detail color illustration, (highest quality), (best illustration)), interesting background, 8k graphics, unreal engine, 8k unity wallpaper,  extreme detail, (3d game asset), made by riot games, Game character, (RPG game cahracter), (stylized portrait), portrait of ";
   const requestBody = {
