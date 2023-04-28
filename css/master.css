@@ -428,3 +428,19 @@ header .btn {
 .inquiry-form {
   color:black;
 }
+
+.submit-step-pill {
+  display: inline-block;
+  background-color: orange;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.text-area {
+  background-color: white;
+}
