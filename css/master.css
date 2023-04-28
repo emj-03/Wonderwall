@@ -416,3 +416,8 @@ header .btn {
   align-items: center;
   justify-content: center;
 }
+
+#contact{
+  background-color: #ffffff;
+  -webkit-text-stroke-color: #444444;
+}
