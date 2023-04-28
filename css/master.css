@@ -450,20 +450,3 @@ header .btn {
 .text-area {
   background-color: white;
 }
-
-#contact-container-left{
-	width: 50%;
-  float:left;
-	padding:20px;
-  padding-left:100px;
-  padding-top: 70px;
-}
-
-#contact-container-right{
-	width: 50%;
-  float:right;
-  padding: 20px;
-  text-align:right;
-  padding-right:100px;
-  padding-top: 70px;
-}
