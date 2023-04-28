@@ -17,8 +17,9 @@
 <div id="contact">
 <body>
     <header>Contact Us</header>
-<h1>Inquiry Form</h1>
+<h1 class="contact-title">Inquiry Form</h1>
 <form action="wonderwall-contact-form.php" method="post">
+        <div class="inquiry-form">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required>
 <br />
@@ -41,8 +42,10 @@
     <label for="checkbox">email</label>
 <br />
     <input type="submit" value="Submit">
+    </div>
 </form>
-<h2>Like our services? Leave a review!</h2>
+    <div class="inquiry-form">
+    <h2>Like our services? Leave a review!</h2>
 <input type="checkbox" id="checkbox" name="checkbox" value="checkbox-value">
 <label for="checkbox">1</label>
 <input type="checkbox" id="checkbox" name="checkbox" value="checkbox-value">
@@ -59,5 +62,6 @@
     <textarea id="comment" name="commment"></textarea>
 <p>We are always looking for feedback to improve Wonderwall.</p>
     <input type="submit" value="Submit">
+    </div>
 </body>
 </div>

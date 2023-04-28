@@ -417,7 +417,14 @@ header .btn {
   justify-content: center;
 }
 
-#contact{
-  background-color: #ffffff;
-  -webkit-text-stroke-color: #444444;
+#contact {
+  background-color: white;
+}
+
+.contact-title {
+  color:#000;
+}
+
+.inquiry-form {
+  color:black;
 }
