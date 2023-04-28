@@ -43,10 +43,14 @@
                         <textarea class="text-area" name="message" required></textarea>
                         <br />
                         <label>Preferred Method of Contact *</label>
-                        <input class="text-area" type="checkbox" id="checkbox" name="checkbox" value="checkbox-value">
-                        <label for="checkbox">text</label>
-                        <input class="text-area" type="checkbox" id="checkbox" name="checkbox" value="checkbox-value">
-                        <label for="checkbox">email</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="contact-checkbox-1" name="contact-method[]" value="text">
+                            <label class="form-check-label" for="contact-checkbox-1">text</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="contact-checkbox-2" name="contact-method[]" value="email">
+                            <label class="form-check-label" for="contact-checkbox-2">email</label>
+                          </div>
                         <br />
                         <input class="submit-step-pill" type="submit" value="Submit">
                     </div>
@@ -55,15 +59,15 @@
             <div id="review-sec">
                 <div class="inquiry-form">
                     <h1 class="contact-title">Like our services?<br />Leave a review!</h1>
-                    <input class="text-area" type="checkbox" id="checkbox" name="checkbox" value="checkbox-value">
+                    <input class="form-check-input" type="checkbox" name="checkbox" value="1">
                     <label for="checkbox">1</label>
-                    <input class="text-area" type="checkbox" id="checkbox" name="checkbox" value="checkbox-value">
+                    <input class="form-check-input" type="checkbox" name="checkbox" value="2">
                     <label for="checkbox">2</label> 
-                    <input class="text-area" type="checkbox" id="checkbox" name="checkbox" value="checkbox-value">
+                    <input class="form-check-input" type="checkbox" name="checkbox" value="3">
                     <label for="checkbox">3</label>
-                    <input class="text-area" type="checkbox" id="checkbox" name="checkbox" value="checkbox-value">
+                    <input class="form-check-input" type="checkbox" name="checkbox" value="4">
                     <label for="checkbox">4</label>
-                    <input class="text-area" type="checkbox" id="checkbox" name="checkbox" value="checkbox-value">
+                    <input class="form-check-input" type="checkbox" name="checkbox" value="5">
                     <label for="checkbox">5</label>
                     <br />
                     <label for="comment">Comment:</label>
