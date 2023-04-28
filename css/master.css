@@ -423,7 +423,7 @@ header .btn {
   height: 100vh;
   display: flex;
   justify-content: space-between;
-  padding: 100px 35px 0 35px;
+  padding: 100px 100px 0 100px;
   background-color: white;
 }
 
@@ -451,3 +451,6 @@ header .btn {
   background-color: white;
 }
 
+#review-sec{
+  text-align: right;
+}
