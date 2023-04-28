@@ -417,7 +417,13 @@ header .btn {
   justify-content: center;
 }
 
-#contact {
+/*contact page*/
+
+#contact-sec {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 35px 0 35px;
   background-color: white;
 }
 
@@ -445,15 +451,3 @@ header .btn {
   background-color: white;
 }
 
-#contact-container-left{
-	float:left;
-	border-right:0;
-	padding:20px;
-}
-
-#contact-container-right{
-	float:right;
-	border-left: 2px solid #000000;
-  padding: 20px;
-  color:white;
-}
