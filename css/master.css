@@ -455,3 +455,17 @@ header .btn {
 #review-sec{
   text-align: right;
 }
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  background-color: #fff;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  cursor: pointer;
+  outline: none;
+}
