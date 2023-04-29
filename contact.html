@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta http-equiv="Content-type" charset="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us</title>
+	<link rel="icon" type="image/x-icon" href="assets/logo.png">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/master.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="page">
+        <section id="contact-sec">
+          <div class="back-home"><a href="index.html"><img src="assets/home.png" width="50%"></a></div>
+            <div id="contact-container-left">
+                <h1 class="contact-title">Inquiry Form</h1>
+                <form action="wonderwall-contact-form.php" method="post">
+                    <div class="inquiry-form">
+                        <label for="name">Name *</label>
+                        <br />
+                        <input class="text-area" type="text" name="name" required>
+                        <br />
+                        <label for="email">Email *</label>
+                        <br />
+                        <input class="text-area" type="email" name="email" required>
+                        <br />
+                        <label for="phone">Phone Number *</label>
+                        <br />
+                        <input class="text-area" type="phone" name="phone" required>
+                        <br />
+                        <label for="subject">Subject *</label>
+                        <br />
+                        <input class="text-area" type="subject" name="subject" required>
+                        <br />
+                        <label for="message">Message *</label>
+                        <br />
+                        <textarea class="text-area" name="message" required></textarea>
+                        <br />
+                        <label>Preferred Method of Contact *</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="contact-checkbox-1" name="contact-method[]" value="text">
+                            <label class="form-check-label" for="contact-checkbox-1">text</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="contact-checkbox-2" name="contact-method[]" value="email">
+                            <label class="form-check-label" for="contact-checkbox-2">email</label>
+                          </div>
+                        <br />
+                        <input class="btn btn-warning" type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+            <div id="review-sec">
+                <div class="inquiry-form">
+                    <h1 class="contact-title">Like our services?<br />Leave a review!</h1>
+                    <input class="form-check-input" type="checkbox" name="checkbox" value="1">
+                    <label for="checkbox">1</label>
+                    <input class="form-check-input" type="checkbox" name="checkbox" value="2">
+                    <label for="checkbox">2</label>
+                    <input class="form-check-input" type="checkbox" name="checkbox" value="3">
+                    <label for="checkbox">3</label>
+                    <input class="form-check-input" type="checkbox" name="checkbox" value="4">
+                    <label for="checkbox">4</label>
+                    <input class="form-check-input" type="checkbox" name="checkbox" value="5">
+                    <label for="checkbox">5</label>
+                    <br />
+                    <label for="comment">Comment:</label>
+                    <br />
+                    <textarea class="text-area" name="commment"></textarea>
+                    <p>We are always looking for feedback to improve Wonderwall.</p>
+                    <input class="btn btn-warning" type="submit" value="Submit">
+                </div>
+            </div>
+        </section>
+    </div>
+</body>

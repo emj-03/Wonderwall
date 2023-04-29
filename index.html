@@ -3,6 +3,7 @@
 
 <head>
   <meta http-equiv="Content-type" charset="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Wonderbar</title>
 	<link rel="icon" type="image/x-icon" href="assets/logo.png">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -18,18 +19,13 @@
 
 		<header>
 			<div class="logo"><img src="assets/logo.png" width="50%"></img></div>
-			<div class="hamburger">
-				<div class="line"></div>
-				<div class="line"></div>
-				<div class="line"></div>
-			</div>
 			<nav class="nav-bar">
 				<ul class="nav_links">
 					<li>
 						<a href="index.html" class="active">Home</a>
 					</li>
 					<li>
-						<a href="gallery.html">Gallery</a>
+						<a href="contact.html">Contact Us</a>
 					</li>
 					<li>
 						<a href="generate.html">Create</a>
@@ -39,7 +35,7 @@
 		</header>
 
 		<section id="home">
-			<img src="assets/bgImg.png" width="100%" id="bg-img" alt="background Image">
+			<img src="assets/bgImg.png" id="bg-img" alt="background Image">
 			<img src="assets/back_img1.png" class="artworks art-back" id="back-img-1" alt="artwork 1">
 			<img src="assets/back_img2.png" class="artworks art-back" id="back-img-2" alt="artwork 2">
 			<img src="assets/back_img3.png" class="artworks art-back" id="back-img-3" alt="artwork 3">
@@ -50,8 +46,8 @@
 			<img src="assets/front_img4.png" class="artworks art-front" id="front-img-4" alt="artwork 7">
 
 			<div class="home-text">
-				<h1>AI-generated</h1>
-				<h1>RPG Characters</h1>
+				<h1 class="home-title">AI-generated</h1>
+				<h1 class="home-title">RPG Characters</h1>
 				<p id="hero-desc">Create high-quality, style-consistent <span style="color: #EB804B">RPG character assets</span> for your games</p>
 				<a href="generate.html" id="get-started-btn" class="btn btn-warning">Get Started</a>
 			</div>
@@ -60,50 +56,59 @@
 
 	  <section id="how-to">
 
-	    <h2 class="fade-in" id="how-to-title">Fast, reliable, and simple</h2>
+        <h2 class="fade-in" id="how-to-title">Fast, reliable, and simple</h2>
 
-			<img src="assets\step1_img.png" class="right-card fade-in" height="300px" width="300px" id="img_1">
-			<img src="assets\step2_img.png" class="left-card fade-in" height="300px" width="300px" id="img_2">
-			<img src="assets\step3_img.png" class="right-card fade-in" height="300px" width="300px" id="img_3">
 
 			<div id="progress-bar-container">
 				<div id="progress-bar"></div>
 			</div>
 
 	    <div class="how-to-card left-card" id="step-1">
-	      <h3 class="step-pill">Step 1</h3>
+	      <h3 class="step-pill" id="step-pill-1">Step 1</h3>
+        <br><br>
 	      <p class="header">Enter in your prompt</p>
 				<p class="explanation">To ensure good quality and consistent results, use descriptive words for your piece, as it will aid the model in generating good images</p>
 			</div>
 
+      <img src="assets/step1_img.png" class="right-card fade-in" height="300px" width="300px" id="img_1">
+
 	    <div class="how-to-card right-card" id="step-2">
-	      <h3 class="step-pill">Step 2</h3>
+	      <h3 class="step-pill" id="step-pill-2">Step 2</h3>
+        <br>
 	      <p class="header" id="header_2">Refine your prompt</p>
 				<p class="explanation" id="exp_2">Remove unnecessary words. Additionally, you may use (parenthesis) to put emphasis on certain descriptors.</p>
 	    </div>
 
+      <img src="assets/step2_img.png" class="left-card fade-in" height="300px" width="300px" id="img_2">
+
 	    <div class="how-to-card left-card" id="step-3">
-				<h3 class="step-pill">Step 3</h3>
+				<h3 class="step-pill" id="step-pill-3">Step 3</h3>
+        <br><br>
 				<p class="header">Export your asset</p>
 				<p class="explanation">Download your newly created asset and import it into your game engine of choice and show off your new AI-generated creation to your friends!</p>
 	    </div>
+
+      <img src="assets/step3_img.png" class="right-card fade-in" height="300px" width="300px" id="img_3">
 
 	  </section>
 
 		<section id="about-us">
 			<div id="team-page">
-				<h2 class="fade-in" id="our-team-title">Our Team</h2>
- 				<p class="fade-in" id="team-desc">We're a group of 3 college students who want to capitalize off the incredibly powerful AI technology to help others like us.</p>
+				<h2 id="our-team-title">Our Team</h2>
+ 				<p id="team-desc">We're a group of 3 college students who want to capitalize off the incredibly powerful AI technology to help others like us.</p>
 				<div class="team-sec">
-					<div class="team" id="team-names">
-						<h3>Emma</h3>
-						<h3>Shlok</h3>
-						<h3>Cat</h3>
-					</div>
-					<div class="team" id="team-imgs">
-						<img src="assets\emma_pfp.png" class="team-img" id="emma_pfp"/>
-						<img src="assets\shlok_pfp.png" class="team-img" id="shlok_pfp"/>
-						<img src="assets\cat_pfp.png" class="team-img" id="cat_pfp"/>
+          <div class="member-box">
+            <img src="assets/emma_pfp.png" class="team-img" id="emma_pfp"/>
+            <h3 class="team-name">Emma</h3>
+          </div>
+          <div class="member-box">
+            <img src="assets/shlok_pfp.png" class="team-img" id="shlok_pfp"/>
+            <h3 class="team-name">Shlok</h3>
+          </div>
+          <div class="member-box">
+            <img src="assets/cat_pfp.png" class="team-img" id="cat_pfp"/>
+            <h3 class="team-name">Cat</h3>
+          </div>
 					</div>
 				</div>
 			</div>
